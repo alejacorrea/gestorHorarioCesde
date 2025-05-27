@@ -1,0 +1,155 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background-color: #fff;
+  color: #11182B;
+}
+
+.header {
+  background-color: #E91E75;
+  padding: 15px 30px;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 30px;
+  width: auto;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  transition: opacity 0.3s ease;
+}
+
+.menu a:hover {
+  opacity: 0.85;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 60px 20px;
+}
+
+.form-container {
+  background-color: #EBEBEB;
+  padding: 40px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+.form-container h2 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.input-group {
+  background: white;
+  border-left: 6px solid #E91E75;
+  border-radius: 8px;
+  padding: 6px 10px;
+  margin-bottom: 20px;
+}
+
+.input-group input {
+  border: none;
+  outline: none;
+  width: 100%;
+  font-style: italic;
+  background: transparent;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  background-color: #E91E75;
+  color: white;
+  font-weight: 600;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #c61b66;
+}
+
+.note {
+  margin-top: 15px;
+  font-size: 13px;
+  color: #888;
+}
+
+/* Responsive para móviles */
+@media (max-width: 480px) {
+  .form-container {
+    padding: 30px 20px;
+    max-width: 90%;
+  }
+
+  .form-container h2 {
+    font-size: 20px;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px;
+  }
+
+  .note {
+    font-size: 12px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .menu {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .logo {
+    height: 36px;
+  }
+}

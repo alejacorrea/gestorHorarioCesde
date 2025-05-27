@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Recuperar Contraseña</title>
+  <link rel="stylesheet" href="css/stylesRecuperarContrasena.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet"/>
+  <link rel="icon" href="images/favicon.png" type="image/png">
+</head>
+<body>
+  <header class="header">
+    <div class="header-container">
+      <a href="index.html" class="logo-container">
+        <img src="images/logo.png" alt="Logo CESDE" class="logo" />
+      </a>
+      <nav>
+        <ul class="menu">
+          <li><a href="inicioSesion.html">Iniciar Sesión</a></li>
+          <li><a href="soporte.html">Soporte</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="main">
+    <div class="form-container">
+      <h2>Recuperar Contraseña</h2>
+      <form>
+        <label for="usuario">Usuario o Cédula</label>
+        <div class="input-group">
+          <input type="text" id="usuario" placeholder="Usuario o Cédula" />
+        </div>
+
+        <label for="correo">Correo o celular registrado</label>
+        <div class="input-group">
+          <input type="email" id="correo" placeholder="Ingresa tu correo o celular" />
+        </div>
+
+        <button type="submit">Enviar código de recuperación</button>
+      </form>
+      <p class="note">Te enviaremos un código para restablecer tu contraseña</p>
+    </div>
+  </main>
+</body>
+</html>
