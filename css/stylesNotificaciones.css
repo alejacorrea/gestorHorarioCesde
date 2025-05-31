@@ -1,0 +1,100 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffffff;
+}
+
+header {
+  background-color: #e3287a;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+}
+
+.logo img {
+  height: 30px;
+  width: auto;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 220px; 
+}
+
+.icons i {
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+.notification-icon {
+  position: relative;
+  text-decoration: none;
+}
+
+.notification-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  color: white;
+  border-radius: 50%;
+  padding: 2px 6px;
+  font-size: 12px;
+}
+
+.notificaciones {
+  background-color: #a3a0a1;
+  color: white;
+  padding: 25px 30px;
+  border-radius: 8px;
+  width: 95%;
+  max-width: 1260px;
+  margin: 30px auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 17px;
+}
+
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .icons {
+    width: 100%;
+    justify-content: flex-start;
+    gap: 15px;
+    margin-top: 10px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-left: 15px;
+  }
+
+  .notificaciones {
+  background-color: #a3a0a1;
+  color: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 95%;
+  max-width: 100%;
+  margin: 15px auto;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-size: 1rem;
+  word-wrap: break-word;
+}
+
+@media (max-width: 480px) {
+  .notificaciones {
+    width: 90%;
+    padding: 15px;
+    font-size: 0.95rem;
+  }
+}
+}
