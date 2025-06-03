@@ -1,0 +1,159 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f0f0f0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.navbar {
+  background-color: #e6007e;
+  color: white;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.navbar .icons span {
+  margin-left: 15px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.chatbox {
+  width: 375px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.chat-header {
+  background-color: #e6007e;
+  color: white;
+  padding: 12px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.chat-body {
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.message.bot {
+  background-color: #f8d2e4;
+  color: #e6007e;
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 80%;
+  margin-bottom: 10px;
+  align-self: flex-start;
+}
+
+.message.user {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+  border-radius: 20px;
+  max-width: 80%;
+  margin-bottom: 1px;
+  align-self: flex-end;
+}
+
+.options button {
+  background-color: #e6007e;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  margin: 6px 0;
+  width: 100%;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.chat-input {
+  display: flex;
+  border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  border-radius: 0 0 0 8px;
+}
+
+.chat-input button {
+  background-color: #e6007e;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 0 0 8px 0;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.icons i {
+  margin-left: 20px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+
+/* iconos */
+
+header {
+  background-color: #e3287a;
+  color: white;
+  display: flex;
+  justify-content: space-between; /* separa logo e íconos */
+  align-items: center;
+  padding: 10px 20px;
+}
+
+header .logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Contenedor de íconos a la derecha, con espacio entre ellos */
+header .icons {
+  display: flex;
+  gap: 60px;
+}
+
+.icons i {
+  font-size: 30px;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  position: relative;
+}

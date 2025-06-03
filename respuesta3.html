@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+ <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>respuesta 3</title>
+  <link rel="stylesheet" href="chatbot.css">
+
+  <link rel="stylesheet" href="css/stylesGes.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+
+<body>
+  
+  <header>
+  <div class="logo">
+      <a href="index.html"><img src="img/logo.png" alt="" height="20px" width="120px"></a>
+    </div>
+    <div class="icons">
+      <i class="fas fa-robot"></i>
+      <i class="fas fa-bell"></i>
+      <i class="fas fa-cog"></i>
+      <i class="fas fa-user-circle"></i>
+    </div>
+  </header>
+
+<div class="main-content">
+    <div class="chatbox">
+      <div class="chat-header">Chatbot Gestor Horario</div>
+      <div class="chat-body">
+        <div class="message bot">Hola, ¿en qué puedo ayudarte hoy?</div>
+
+      <div>
+        <div class="options">
+      <a href="#respuesta1"><button>¿Cómo consulto mi horario?</button></a>
+      </div>
+        
+    <div>
+        <div id="respuesta1" class="respuesta message bot">Puedes consultar tu horario desde la sección 'Mi horario' en el menú principal.</div>
+        <!-- <div id="respuesta2" class="respuesta message bot">Para agregar una clase, ve al módulo de clases y haz clic en 'Agregar nueva clase'.</div> --> 
+        <!-- <div id="respuesta3" class="respuesta message bot">Para modificar un horario, selecciona el horario y haz clic en 'Editar'.</div> -->
+        <!-- <div id="respuesta4" class="respuesta message bot">Por favor, especifica tu problema y te ayudaré mejor.</div>  -->
+    </div>
+
+
+    <div class="options">
+      <a href="#respuesta2"><button>¿Cómo agrego una clase?</button></a>
+    </div>
+
+    <div>
+        <!-- <div id="respuesta1" class="respuesta message bot">Puedes consultar tu horario desde la sección 'Mi horario' en el menú principal.</div> -->
+         <div id="respuesta2" class="respuesta message bot">Para agregar una clase, ve al módulo de clases y haz clic en 'Agregar nueva clase'.</div>
+        <!-- <div id="respuesta3" class="respuesta message bot">Para modificar un horario, selecciona el horario y haz clic en 'Editar'.</div> -->
+        <!-- <div id="respuesta4" class="respuesta message bot">Por favor, especifica tu problema y te ayudaré mejor.</div>  -->
+    </div>
+
+    <div class="options">
+      <a href="#respuesta3"><button>¿Cómo modifico un horario?</button></a>
+    </div>
+
+    <div>
+        <!-- <div id="respuesta1" class="respuesta message bot">Puedes consultar tu horario desde la sección 'Mi horario' en el menú principal.</div>
+        <div id="respuesta2" class="respuesta message bot">Para agregar una clase, ve al módulo de clases y haz clic en 'Agregar nueva clase'.</div> -->
+        <div id="respuesta3" class="respuesta message bot">Para modificar un horario, selecciona el horario y haz clic en 'Editar'.</div>
+        <!-- <div id="respuesta4" class="respuesta message bot">Por favor, especifica tu problema y te ayudaré mejor.</div>  -->
+    </div>
+
+       <div class="options">
+      <!-- <a href="#respuesta1"><button>¿Cómo consulto mi horario?</button></a>
+      <a href="#respuesta2"><button>¿Cómo agrego una clase?</button></a> -->
+      <!-- <a href="#respuesta3"><button>¿Cómo modifico un horario?</button></a> -->
+    </div>
+
+      <div class="chat-input">
+        <input type="text" id="user-input" placeholder="Escribe tu mensaje...">
+        <button>Enviar</button>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
