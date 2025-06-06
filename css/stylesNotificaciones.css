@@ -1,35 +1,81 @@
-body {
-  font-family: 'Montserrat', sans-serif;
+* {
   margin: 0;
   padding: 0;
-  background-color: #ffffff;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  background-color: #f2f2f2;
+}
 header {
-  background-color: #e3287a;
-  color: white;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  background-color: #E91E75;
   padding: 15px 30px;
-}
-
-.logo img {
-  height: 30px;
-  width: auto;
-}
-
-.icons {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  width: 220px; 
+  justify-content: space-between;
+  color: white;
+}
+.logo {
+  height: 40px;
 }
 
-.icons i {
-  font-size: 28px;
+.header-right {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+}
+
+.header-right i {
+  font-size: 20px;
   cursor: pointer;
+}
+
+.perfil-menu {
+  position: relative;
+}
+
+.perfil-menu i {
+  font-size: 24px;
   color: white;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: absolute;
+  top: 35px;
+  right: 0;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 10px 0;
+  display: none;
+  flex-direction: column;
+  min-width: 180px;
+  z-index: 100;
+}
+
+.dropdown a {
+  padding: 10px 20px;
+  display: block;
+  text-decoration: none;
+  color: #333;
+  font-size: 14px;
+}
+
+.dropdown a:hover {
+  background-color: #f2f2f2;
+}
+
+.dropdown .cerrar {
+  color: #e91e75;
+  font-weight: bold;
+  border-top: 1px solid #eee;
+  margin-top: 5px;
+}
+
+.perfil-menu:hover .dropdown {
+  display: flex;
 }
 
 .notification-icon {

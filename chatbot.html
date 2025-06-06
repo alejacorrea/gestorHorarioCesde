@@ -5,8 +5,8 @@
  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>chatbot</title>
-  <link rel="stylesheet" href="chatbot.css">
-
+  <link rel="stylesheet" href="css/chatbot.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
   <link rel="stylesheet" href="css/stylesGes.css" />
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/fullcalendar@6.1.8/main.min.css" rel="stylesheet">
@@ -16,14 +16,28 @@
 <body>
 
   <header>
-  <div class="logo">
-      <a href="index.html"><img src="images/logo.png" alt="" height="20px" width="120px"></a>
-    </div>
-    <div class="icons">
-      <i class="fas fa-robot"></i>
-      <i class="fas fa-bell"></i>
-      <i class="fas fa-cog"></i>
-      <i class="fas fa-user-circle"></i>
+    <a href="index.html">
+        <img src="images/logo.png" alt="Logo CESDE" class="logo" />
+    </a>
+
+    <h2>BIENVENIDO PROFESOR</h2>
+    <div class="header-right">
+      <a href="chatbot.html" class="text-white text-decoration-none">
+        <i class="bi bi-robot"></i>
+      </a>
+      <a href="notificaciones.html" class="notification-icon">
+        <i class="bi bi-bell"></i>
+        <span class="notification-count" id="notiCount">3</span>
+      </a>
+      <i class="bi bi-gear"></i>
+      <div class="perfil-menu">
+        <i class="bi bi-person-circle"></i>
+        <div class="dropdown">
+          <a href="#">Ver perfil</a>
+          <a href="#">Cambiar contraseña</a>
+          <a href="index.html" class="cerrar">Cerrar sesión</a>
+        </div>
+      </div>
     </div>
   </header>
 
@@ -41,9 +55,10 @@
       </div> -->
 
       <div class="options">
-        <a href="#respuesta1"><button>¿Cómo consulto mi horario?</button></a>
-        <a href="#respuesta2"><button>¿Cómo agrego una clase?</button></a>
-        <a href="#respuesta3"><button>¿Cómo modifico un horario?</button></a>
+        <a href="respuesta1.html"><button>¿Cómo consulto mi horario?</button></a>
+        <a href="respuesta2.html"><button>¿Cómo agrego una clase?</button></a>
+        <a href="respuesta3.html"><button>¿Cómo modifico un horario?</button></a>
+        
       </div>
       
       <div class="chat-input">
