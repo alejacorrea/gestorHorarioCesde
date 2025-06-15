@@ -29,6 +29,7 @@ header {
 .header-right i {
   font-size: 20px;
   cursor: pointer;
+  color: white;
 }
 
 .perfil-menu {
