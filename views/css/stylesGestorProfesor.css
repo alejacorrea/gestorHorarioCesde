@@ -25,12 +25,13 @@ header {
 .header-right {
   display: flex;
   align-items: center;
-  gap: 25px;
+  gap: 25px;;
 }
 
 .header-right i {
   font-size: 20px;
   cursor: pointer;
+  color: white;
 }
 
 .perfil-menu {
@@ -315,6 +316,7 @@ button.eliminar:hover {
 .notification-icon {
   position: relative;
   text-decoration: none;
+  color: white;
 }
 
 .notification-count {

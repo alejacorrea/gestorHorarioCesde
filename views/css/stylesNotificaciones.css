@@ -24,11 +24,13 @@ header {
   display: flex;
   align-items: center;
   gap: 25px;
+  
 }
 
 .header-right i {
   font-size: 20px;
   cursor: pointer;
+  color: white;
 }
 
 .perfil-menu {
@@ -78,6 +80,10 @@ header {
   display: flex;
 }
 
+.titulo{
+  padding-left: 50px;
+  margin-top: 20px;
+}
 .notification-icon {
   position: relative;
   text-decoration: none;
