@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inicio Sesion Gestor Horarios</title>
+  <link rel="icon" href="/views/images/favicon.png" type="image/png" />
+  <link rel="stylesheet" href="/styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="icon" href="/views/images/favicon.png" type="image/png">
+</head>
+
+<body>
+
+  <div id="header">
+    <a href="/index.html">
+      <img id="logo-img" src="/views/images/logo.png" alt="Logo CESDE" />
+    </a>
+    <div id="nav">
+      <a href="/views/pages/inicioSesion.html">Iniciar Sesión</a>
+      <a href="/views/pages/soporte.html">Soporte</a>
+    </div>
+  </div>
+
+  <div class="container">
+    <div class="login-card">
+      <h1>Gestor de Horarios</h1>
+      <p class="subtitle">Ingresa a tu cuenta llenando los campos solicitados</p>
+      <form id="formInicioSesion">
+        <div class="input-group">
+          <i class="fas fa-user"></i>
+          <label class="formulario__etiqueta" for="correo"></label>
+          <input name="correo" id="correo" class="formulario__entrada" type="text" placeholder="Correo Electrónico" />
+        </div>
+        <div class="input-group">
+          <i class="fas fa-lock"></i>
+          <input name="contrasena" id="contrasena" class="formulario__entrada" type="password" placeholder="Contraseña" />
+        </div>
+        <div class="options">
+          <label><input type="checkbox" checked /> Recuérdarme</label>
+          <a href="/views/pages/recuperarContrasena.html">¿Olvidaste tu contraseña?</a>
+        </div>
+        <button id="btn-ingresar" type="submit" formaction="/views/pages/gestorHorariosAdministrador.html">Iniciar
+          Sesión</button>
+
+      </form>
+    </div>
+    <div class="side-panel">
+      <img src="/views/images/logo.png" alt="Logo CESDE" class="logo-img" />
+      <p class="linea">Línea de Transparencia: 018000517740</p>
+    </div>
+  </div>
+  <footer>
+    Copyright © 2025 Cesde
+  </footer>
+  <script type="module" src="/script.js"></script>
+  <script type="module" src="/controllers/personaControllers.js"></script>
+</body>
+
+</html>
