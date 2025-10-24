@@ -44,6 +44,26 @@ header {
   cursor: pointer;
 }
 
+.dias button {
+  margin: 2px;
+  border: none;
+  padding: 5px 8px;
+  background: #EBEBEB;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.dias button:hover {
+  background: #d0d0d0;
+}
+
+.dias button.selected {
+  background: #E91E75;
+  color: white;
+  font-weight: bold;
+}
+
 .dropdown {
   position: absolute;
   top: 35px;
@@ -249,6 +269,14 @@ button.guardar {
   border-radius: 6px;
   font-weight: bold;
   margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button.guardar:hover {
+  background: #d11964;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 button.modificar,
@@ -261,6 +289,15 @@ button.eliminar {
   border-radius: 6px;
   font-weight: bold;
   margin-bottom: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button.modificar:hover,
+button.eliminar:hover {
+  background: #2a2727;
+  transform: translateY(-1px);
+  box-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .close-btn {
